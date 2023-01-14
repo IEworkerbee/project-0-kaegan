@@ -10,4 +10,9 @@ install:
 	# Nothing installed
 
 run:
+	cp ./credentials.ini ./hello
 	@(cd hello; python3 hello.py)
+	rm -f ./hello/credentials.ini
+
+clean:
+    rm -rf __pycache__
