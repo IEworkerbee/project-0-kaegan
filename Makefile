@@ -14,5 +14,5 @@ run:
 	@(cd hello; python3 hello.py)
 
 clean:
-    rm -rf __pycache__
+	rm -rf __pycache__
 	rm -f ./hello/credentials.ini
