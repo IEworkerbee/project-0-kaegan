@@ -7,12 +7,12 @@
 # appropriate location.
 
 install:
-	# Nothing installed
+	cp ./credentials.ini ./hello
 
 run:
-	cp ./credentials.ini ./hello
+	
 	@(cd hello; python3 hello.py)
-	rm -f ./hello/credentials.ini
 
 clean:
     rm -rf __pycache__
+	rm -f ./hello/credentials.ini
